@@ -65,7 +65,7 @@ Login doctor
 
 Get doctor by Id
 
-Delete doctor by ID
+
 
 Prevent duplicate registration (email & phone number)
 
