@@ -48,7 +48,7 @@ Login patient
 
 Logout patient
 
-Get patient by email
+Get patient by Id
 
 Delete patient by ID
 
