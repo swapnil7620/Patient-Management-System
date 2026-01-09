@@ -48,7 +48,7 @@ Login patient
 
 Logout patient
 
-Get patient by Id
+Get patient by Email
 
 Delete patient by ID
 
@@ -63,7 +63,7 @@ Register doctor (with validation)
 
 Login doctor
 
-Get doctor by email
+Get doctor by Id
 
 Delete doctor by ID
 
