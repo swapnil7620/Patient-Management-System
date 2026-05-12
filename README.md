@@ -1,97 +1,124 @@
 # Patient-Management-System
-A basic Spring Boot backend project implementing patient, doctor, and prescription management with REST APIs.
-Patient Management System (Spring Boot)
 
+A Spring Boot backend application for managing Patients, Doctors, and Prescriptions using RESTful APIs. The project follows a layered architecture and demonstrates backend development concepts such as authentication, validation, entity relationships, and CRUD operations.
 
-Project Overview
+---
 
-This is a basic Spring Boot REST API project developed as part of a technical assignment. The application manages Patients, Doctors, and Prescriptions, including login/logout functionality and basic validations.
+# Project Overview
 
-----------The project follows a layered architecture-----------
+The Patient Management System is designed to manage patient records, doctor information, and prescription details efficiently. The application provides secure login functionality, request validation, and relational database management using Spring Data JPA and Hibernate.
 
-Controller Layer
+The project follows a clean layered architecture:
 
-Service Layer
+* Controller Layer
+* Service Layer
+* Repository Layer
+* Entity Layer
 
-Repository Layer
+---
 
-Entity Layer
+# Technologies Used
 
+* Java 17
+* Spring Boot
+* Spring Data JPA
+* Hibernate
+* MySQL
+* Maven
+* Postman (API Testing)
 
-------------Technology used --------
+---
 
+# Features
 
-Java 17
+## Patient Module
 
-Spring Boot
+* Register patient with validation
+* Patient login functionality
+* Patient logout functionality
+* Fetch patient details by email
+* Delete patient by ID
+* Prevent duplicate registration using email and phone number validation
 
-Spring Data JPA
+---
 
-Hibernate
+## Doctor Module
 
-MySQL
+* Register doctor with validation
+* Doctor login functionality
+* Fetch doctor details by ID
+* Prevent duplicate registration using email and phone number validation
 
-Maven
+---
 
-Postman (for API testing)
+## Prescription Module
 
+* Create prescriptions for patients by doctors
+* Fetch prescriptions by patient
+* Fetch prescriptions by doctor
 
+---
 
+# Entity Relationships
 
-------------------Modeules ----------
+* One Doctor can write multiple Prescriptions
+* One Patient can have multiple Prescriptions
+* Each Prescription is associated with one Doctor and one Patient
 
-------------Patient Module---------
+---
 
-Register patient (with validation)
+# Authentication
 
-Login patient
+* Simple login and logout functionality implemented
+* Login time tracking for patients
+* Session validation during login operations
 
-Logout patient
+---
 
-Get patient by Email
+# Project Architecture
 
-Delete patient by ID
+The project is structured using layered architecture for better maintainability and scalability:
 
-Prevent duplicate registration (email & phone number)
+## Controller Layer
 
+Handles HTTP requests and API endpoints.
 
+## Service Layer
 
+Contains business logic and validation handling.
 
-----------Doctor Module-------
+## Repository Layer
 
-Register doctor (with validation)
+Manages database interactions using Spring Data JPA.
 
-Login doctor
+## Entity Layer
 
-Get doctor by Id
+Defines database entities and relationships.
 
+---
 
+# API Testing
 
-Prevent duplicate registration (email & phone number)
+All REST APIs were tested using Postman to verify:
 
+* Request and response handling
+* Authentication flow
+* CRUD functionality
+* Data validation
 
+---
 
-------Prescription Module----
+# Future Improvements
 
-Create prescription by doctor for patient
+* JWT-based Authentication
+* Role-Based Authorization
+* Swagger/OpenAPI Documentation
+* Exception Handling
+* Docker Deployment
+* Unit Testing with JUnit and Mockito
 
-Fetch prescriptions by patient
+---
 
-Fetch prescriptions by doctor
+# Author
 
-
-
--------------Entity Relationship-----
-
-One Doctor can write multiple Prescriptions
-
-One Patient can have multiple Prescriptions
-
-Each Prescription is linked to one Doctor and one Patient
-
-
--------Authentication------
-
-Simple login & logout implemented
-
-Login time is stored for patient
+Swapnil Mahajan
